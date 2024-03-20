@@ -12,6 +12,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--define las características de visualización en dispositivos móviles-->
     <link rel="stylesheet" href="./style.css">
 </head>
+<body>
+    <header> <!--sección de encabezado en un documento HTML-->
+        <h1>Aplicación de notas </h1> <!-- hay un nivel de encabezado (heading)  donde <h1> es el más importante y <h6> es el menos importante-->
+    </header>
+
+    <div class = "contenido 1">
+        <h2>Crea guarda y elimina tus notas de texto Aquí</h2>
+        <div class="modeloNota">
+            <div class="cuerpoNota">
+                <h5 class="nombreNota"> Añade una nota</h5>
+                <div class="form-group"> <!--contenedor (<div>) con la clase form-group, que se utiliza comúnmente en formularios para agrupar elementos relacionados. 
+                Dentro de este contenedor, hay un área de texto (<textarea>) con la clase form-control, que se usa para aplicar estilos de formulario predefinidos.
+                El área de texto tiene un identificador (id) de "addTxt", se define para tener 8 filas (rows) y 60 columnas (cols).-->
+                    <textarea class="form-control" id="addTxt" rows="8" cols="60"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBttn">Añade tu nota</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
 
 
 
