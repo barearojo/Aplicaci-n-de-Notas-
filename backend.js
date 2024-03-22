@@ -14,7 +14,12 @@ function addText() {
   // Código para manejar el evento aquí
   let addTxt = document.getElementById("addTxt");
   let notes = document.getElementById("notes");
-   
+  if(notes == null){
+    notesObj = [];
+  } 
+  else{
+    notesObj = JSON.parse(notes) //Utiliza el método JSON.parse() que toma la cadena JSON como entrada y la convierte en un objeto JavaScript,.
+  }
 };
 
 
