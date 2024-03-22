@@ -1,6 +1,5 @@
-//const moment = require('moment'); // Importar la biblioteca moment.js
 console.log("Welcome to notes app. This is app.js");
-/*
+
 document.addEventListener("DOMContentLoaded",function(){
   let addBtn = document.getElementById("addBtn"); //let en JavaScript se utiliza para declarar una variable local en el ámbito de bloque. 
   //búsqueda en el documento HTML actual en busca de un elemento con el ID "addBtn". Cuando se encuentra un elemento con ese ID,
@@ -34,9 +33,9 @@ function addText() {
 function horaFormateada(){
   let fechaActual = moment();
   let fechaFormateada = fechaActual.format('DD/MM/YYYY HH:mm:ss');
-  return fechaFormateada.stringify;
+  return fechaFormateada;
 }
 
-*/
+
 
 
