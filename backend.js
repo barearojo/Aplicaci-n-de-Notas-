@@ -30,35 +30,51 @@ function addText() {
   showNotes();
 };
 
-function showNotes(){
-
+/**
+ * Función para mostrar las notas almacenadas localmente en el navegador.
+ */
+function showNotes() {
+  // Obtener las notas del almacenamiento local
   let notes = localStorage.getItem("notes");
-  if (notes == null){
+
+  // Verificar si hay notas almacenadas
+  if (notes == null) {
+    // Si no hay notas, inicializar un arreglo vacío
     notesObj = [];
-  }
-  else{
-    notesObj = JSON.parse(notes)
+  } else {
+    // Si hay notas, convertir el JSON almacenado en un objeto JavaScript
+    notesObj = JSON.parse(notes);
   }
 
+  // Variable para almacenar el HTML de las notas
   let html = "";
-  notesObj.forEach(function (element, index){
+
+  // Iterar sobre cada nota en el objeto de notas
+  notesObj.forEach(function(element, index) {
+    // Construir el HTML de una tarjeta de nota para cada nota
     html += `
-            <div class="noteCard my-2 mx-2 card" style="width: 18rem">
-                    <div class="card-body">
-                        <h5 class="card-title">Note ${index + 1}</h5>
-                        <p class="card-text"> ${element}</p>
-                        <button class="btn btn-primary">Delete Note</button>
-                    </div>
-                </div>`;
+      <div class="noteCard my-2 mx-2 card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Note ${index + 1}</h5>
+          <p class="card-text"> ${element}</p>
+          <button class="btn btn-primary">Delete Note</button>
+        </div>
+      </div>`;
   });
+
+  // Obtener el elemento HTML donde se mostrarán las notas
   let notesElm = document.getElementById("notes");
+
+  // Verificar si hay notas para mostrar
   if (notesObj.length != 0) {
+    // Si hay notas, agregar el HTML de las notas al elemento
     notesElm.innerHTML = html;
   } else {
+    // Si no hay notas, mostrar un mensaje indicando que no hay notas
     notesElm.innerHTML = `Nothing to show! Use "Add a Note" section above to add notes.`;
   }
-
 };
+
 
 
 function horaFormateada(){
