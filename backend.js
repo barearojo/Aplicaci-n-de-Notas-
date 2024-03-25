@@ -27,14 +27,45 @@ function addText() {
   //en el almacenamiento local del navegador web bajo la clave "notes". La próxima vez que el usuario abra la aplicación,
   
   addTxt.value = "";//reiniciamos el valor del addtxt
-  //showNotes();
+  showNotes();
 };
+
+function showNotes(){
+
+  let notes = localStorage.getItem("notes");
+  if (notes == null){
+    notesObj = [];
+  }
+  else{
+    notesObj = JSON.parse(notes)
+  }
+
+  let html = "";
+  notesObj.forEach(function (element, index){
+    html += `
+            <div class = "noteCard my-2 mx-2 card" style ="width : 18rem>
+              <div class = "cardBody">
+                <h5 class ="cardTitle">Note ${index + 1}</h5>
+                <p class = "cardtext> ${element}</p>
+                <button class="btn btn-primary">Delete Note</button>
+              </div>
+            </div>`;
+  });
+  let notesElm = document.getElementById("notes");
+  if (notesObj.length != 0) {
+    notesElm.innerHTML = html;
+  } else {
+    notesElm.innerHTML = `Nothing to show! Use "Add a Note" section above to add notes.`;
+  }
+
+};
+
 
 function horaFormateada(){
   let fechaActual = moment();
   let fechaFormateada = fechaActual.format('DD/MM/YYYY HH:mm:ss');
   return fechaFormateada;
-}
+};
 
 
 
