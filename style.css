@@ -1,0 +1,58 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+/* Estilos para las tarjetas de notas */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de reproducir */
+#playButton {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el área de texto */
+.form-control {
+    resize: vertical;
+}
+
+/* Estilos para las tarjetas de notas individuales */
+.noteCard {
+    background-color: #ffffff;
+}
+
+/* Estilos para el botón de eliminar nota */
+#deleteNote {
+    margin-top: 10px;
+}
+
+/* Estilos para los títulos de tarjetas */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Estilos para el texto de las tarjetas */
+.card-text {
+    font-size: 1rem;
+}
