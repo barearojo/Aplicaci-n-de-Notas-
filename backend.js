@@ -6,6 +6,19 @@ document.addEventListener("DOMContentLoaded",function(){
   // este código asigna una referencia a ese elemento al variable addBtn.
 
   addBtn.addEventListener("click" , addText);   // Aquí pasamos una referencia a la función addText sin invocarla.
+
+
+  document.getElementById('playButton').addEventListener('click', function() {
+    var audio = document.getElementById('audio');
+    audio.play();
+    this.style.display = 'none'; // Ocultar el botón después de reproducir
+  });
+
+  // Reproducir audio automáticamente cuando la página se haya cargado completamente
+  window.addEventListener('load', function() {
+    var audio = document.getElementById('audio');
+    audio.play();
+  });
 });
 
 

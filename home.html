@@ -15,9 +15,19 @@
     <script src=" https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js "></script><!--Link para usar moment.js-->
 </head>
 <body>
+    <!--La etiqueta <audio> define el reproductor, mientras que <source> especifica la ruta del archivo de audio y su tipo MIME.
+         Los atributos controls proporcionan controles de reproducción estándar, y loop garantiza la repetición continua del audio 
+         después de la reproducción inicial.
+    -->
+    <button id="playButton">Reproducir</button>
+    <audio loop id="audio" style="display:none;">
+      <source src="./media/laytonmusic.mp3" type="audio/mp3">
+    </audio>
+
     <header> <!--sección de encabezado en un documento HTML-->
         <h1>Aplicación de notas </h1> <!-- hay un nivel de encabezado (heading)  donde <h1> es el más importante y <h6> es el menos importante-->
     </header>
+
 
     <div class = "container my-3">
         <h2>Crea guarda y elimina tus notas de texto Aquí</h2>
