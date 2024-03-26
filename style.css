@@ -56,9 +56,17 @@ h2{
     margin-bottom: 20px;
 }
 
-/* Estilos para las tarjetas de notas individuales */
+.note-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Alinea los elementos hacia la parte superior del contenedor */
+}
 .noteCard {
-    background-color: #ffffff;
+    flex: 0 0 calc(33.33% - 20px); /* Esto hace que las notas ocupen aproximadamente un tercio del contenedor, con un margen de 20px */
+    margin: 10px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 2px solid #343a40;
 }
 
 #addBtn{
