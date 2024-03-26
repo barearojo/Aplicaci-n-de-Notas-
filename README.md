@@ -1,5 +1,8 @@
 # Notas Flamigeras
 
+![Captura del funcionamiento](./media/capturaAplicación.png)
+
+
 Esta aplicación web te permite crear, guardar y eliminar notas de texto de manera sencilla. Puedes acceder a ella desde tu navegador y utilizarla para organizar tus ideas, tareas pendientes o cualquier información importante que necesites recordar.
 
 ## Funcionalidades
@@ -45,5 +48,5 @@ node server.js
 
 4. Abre tu navegador web y visita `http://localhost:3000` para acceder a la aplicación.
 
-5. ¡Comienza a escribir y organizando tus notas!
+5. ¡Comienza a escribir y organizando tus notas
 
