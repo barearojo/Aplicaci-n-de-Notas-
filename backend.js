@@ -70,7 +70,7 @@ function showNotes() {
         <div class="card-body">
           <h5 class="card-title">Note ${index + 1}</h5>
           <p class="card-text"> ${element}</p>
-          <button class="btn btn-primary">Delete Note</button>
+          <button class="btn btn-primary" id="deleteNote" onclick="deleteNote(${index})">Delete Note</button>
         </div>
       </div>`;
   });
@@ -88,6 +88,24 @@ function showNotes() {
   }
 };
 
+
+function deleteNote(index) {
+  let notes = localStorage.getItem("notes");
+  let notesObj;
+
+  if (notes == null) {
+    notesObj = [];
+  } else {
+    notesObj = JSON.parse(notes);
+    console.log(horaFormateada() + " Se va eliminar el objeto notes del localStorage el index " + index + " con texto " + notesObj[index])
+  }
+
+  notesObj.splice(index, 1); // Eliminar la nota en el índice especificado
+
+  localStorage.setItem("notes", JSON.stringify(notesObj)); // Actualizar el almacenamiento local
+
+  showNotes(); // Mostrar las notas actualizadas
+}
 
 
 function horaFormateada(){
