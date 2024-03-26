@@ -22,6 +22,13 @@ header {
     text-align: center;
 }
 
+h2{
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
 /* Estilos para el contenedor principal */
 .container {
     margin: 20px auto;
@@ -45,6 +52,8 @@ header {
 /* Estilos para el área de texto */
 .form-control {
     resize: vertical;
+    align-self: center;
+    margin-bottom: 20px;
 }
 
 /* Estilos para las tarjetas de notas individuales */
@@ -52,6 +61,29 @@ header {
     background-color: #ffffff;
 }
 
+#addBtn{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+    
+    active {
+      box-shadow: 0px 0px 0px 0px;
+      top: 5px;
+      left: 5px;
+    }
+}
 /* Estilos para el botón de eliminar nota */
 #deleteNote { /*creditos a Michael McMillan pagina https://getcssscan.com/css-buttons-examples boton 54*/
 
@@ -81,10 +113,12 @@ header {
 
 /* Estilos para los títulos de tarjetas */
 .card-title {
-    background-color: #5f676e;
+    background-color: #3e4347;
     color: #ffffff;
     font-size: 1.25rem;
     font-weight: bold;
+    text-align: center;
+
 }
 
 /* Estilos para el texto de las tarjetas */
