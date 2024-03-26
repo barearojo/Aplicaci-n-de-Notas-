@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./backend.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js "></script><!--Link para usar moment.js-->
+    <script src="https://kit.fontawesome.com/36efa85050.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--La etiqueta <audio> define el reproductor, mientras que <source> especifica la ruta del archivo de audio y su tipo MIME.
          Los atributos controls proporcionan controles de reproducción estándar, y loop garantiza la repetición continua del audio 
          después de la reproducción inicial.
     -->
-    <button id="playButton">Reproducir</button>
+    <button id="playButton"><i class="fa-solid fa-music fa-3x"></i></button>
     <audio loop id="audio" style="display:none;">
       <source src="./media/laytonmusic.mp3" type="audio/mp3">
     </audio>
