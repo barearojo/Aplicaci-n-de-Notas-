@@ -1,12 +1,14 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
-const moment = require('moment'); // Importar la biblioteca moment.js
+// Importación de módulos necesarios
+const http = require('http'); // Módulo para crear el servidor HTTP
+const fs = require('fs'); // Módulo para interactuar con el sistema de archivos
+const path = require('path'); // Módulo para manejar rutas de archivos
+const moment = require('moment'); // Importar la biblioteca moment.js para manipulación de fechas y horas
 
-
+// Definición del hostname y puerto del servidor
 const hostname = '127.0.0.1';
 const port = 3000;
 
+// Creación del servidor HTTP
 const server = http.createServer((req, res) => {
   // Obtiene la URL solicitada por el navegador
   const url = req.url;
@@ -35,11 +37,13 @@ const server = http.createServer((req, res) => {
   });
 });
 
+// Función para servir la página de inicio
 function serveHomePage(res) {
   const homeFilePath = path.join(__dirname, 'home.html');
   serveFile(homeFilePath, res);
 }
 
+// Función para servir archivos
 function serveFile(filePath, res) {
   // Lee el archivo y envíalo como respuesta
   fs.readFile(filePath, (err, data) => {
@@ -60,12 +64,14 @@ function serveFile(filePath, res) {
       contentType = 'application/javascript';
     }
 
+    // Configura la respuesta con el contenido y tipo MIME adecuados
     res.statusCode = 200;
     res.setHeader('Content-Type', contentType);
     res.end(data);
   });
 }
 
+// Inicia el servidor y escucha en el puerto especificado
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });

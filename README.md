@@ -1,11 +1,12 @@
-# Notas Flamigeras
+# Notas Flamigeras🔥
+
 
 ![Captura del funcionamiento](./media/capturaAplicación.png)
 
 
 Esta aplicación web te permite crear, guardar y eliminar notas de texto de manera sencilla. Puedes acceder a ella desde tu navegador y utilizarla para organizar tus ideas, tareas pendientes o cualquier información importante que necesites recordar.
 
-## Funcionalidades
+## Funcionalidades 🛠️
 
 - **Creación de Notas**: Escribe tus notas en el área de texto proporcionada y luego presiona el botón "Añade tu nota" para guardarla.
   
@@ -15,7 +16,7 @@ Esta aplicación web te permite crear, guardar y eliminar notas de texto de mane
 
 - **Reproductor de Música**: Disfruta de música mientras usas la aplicación. Haz clic en el botón con el ícono de música para iniciar la reproducción de música de fondo.
 
-## Cómo Usar
+## Cómo Usar 📝
 
 1. **Escribe tu Nota**: En el área de texto, escribe la nota que deseas guardar.
 
@@ -27,7 +28,7 @@ Esta aplicación web te permite crear, guardar y eliminar notas de texto de mane
 
 5. **Disfruta de la Música**: Para escuchar música de fondo, haz clic en el botón con el ícono de música.
 
-## Tecnologías Utilizadas
+## Tecnologías Utilizadas 💻💻
 
 - **HTML y CSS**: Para la estructura y el estilo de la página web.
   
@@ -35,7 +36,7 @@ Esta aplicación web te permite crear, guardar y eliminar notas de texto de mane
 
 - **moment.js**: Una biblioteca de JavaScript para formatear y manipular fechas y horas.
 
-## ¿Cómo Iniciar la Aplicación?
+## ¿Cómo Iniciar la Aplicación? 🚀
 
 1. Clona este repositorio en tu máquina local.
    
