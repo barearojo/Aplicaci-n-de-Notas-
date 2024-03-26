@@ -39,6 +39,9 @@ Esta aplicación web te permite crear, guardar y eliminar notas de texto de mane
 2. Abre tu terminal y navega hasta el directorio donde clonaste el repositorio.
 
 3. Ejecuta el siguiente comando para iniciar el servidor:
+```
+node server.js
+```
 
 4. Abre tu navegador web y visita `http://localhost:3000` para acceder a la aplicación.
 
